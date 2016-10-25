@@ -1,0 +1,42 @@
+{
+  "name": "react-native-markdown-syntax",
+  "version": "1.0.0-rc",
+  "description": "A markdown component for react-native",
+  "keywords": [
+    "markdown",
+    "text processing",
+    "ast",
+    "react native"
+  ],
+  "maintainers": [
+    "Pierre Monge <pierre.monge@epitech.eu>"
+  ],
+  "contributors": [
+    "Dominic Baggott <dominic.baggott@gmail.com> (http://evilstreak.co.uk)",
+    "Ash Berlin <ash_markdownjs@firemirror.com> (http://ashberlin.com)",
+    "XhmikosR <xhmikosr@users.sourceforge.net>",
+    "Robin Ward <robin.ward@gmail.com> (http://eviltrout.com)",
+    "Pierre Monge <pierre.monge@epitech.eu>"
+  ],
+  "bugs": {
+    "url": "https://github.com/Liroo/react-native-markdown-syntax/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Liroo/react-native-markdown-syntax.git"
+  },
+  "main": "./Markdown.js",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "react": "^15.3.2",
+    "react-native": "^0.35.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 1"
+  }
+}
