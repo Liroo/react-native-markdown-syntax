@@ -1,4 +1,4 @@
-import { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {
   View,
 } from 'react-native';
@@ -18,13 +18,6 @@ export default class Markdown extends Component {
     mdStyle: PropTypes.any,
   };
 
-  constructor(props: Props) {
-    super(props);
-    if (typeof props.children !== 'string') {
-      throw 'Children passed to Markdown is not a Text (string)';
-    }
-  }
-
   componentDidMount() {
     if (this.props.mdStyle) {
       mdStyle = _.merge({}, this.props.mdStyle, mdStyle);
@@ -32,9 +25,17 @@ export default class Markdown extends Component {
   }
 
   render() {
+    let text;
+    if (typeof this.props.children === 'string') {
+      text = this.props.children;
+    } else if (typeof this.props.children === 'object') {
+      text = this.props.children.join('');
+    } else {
+      throw 'Not supported type of text: ' + typeof this.props.children;
+    }
     return (
       <View style={[{ flexDirection: 'column' }, this.props.style]}>
-        {markdown.toReact(this.props.children)}
+        {markdown.toReact(text)}
       </View>
     )
   }
@@ -110,4 +111,4 @@ let mdStyle = {
     fontWeight: 'bold',
   },
 };
-export mdStyle;
+export { mdStyle };

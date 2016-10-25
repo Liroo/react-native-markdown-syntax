@@ -35,3 +35,5 @@ jspm_packages
 
 # IDE
 .idea
+
+.DS_Store
