@@ -64,9 +64,20 @@ let mdStyle = {
   h6: {
     fontSize: 11,
   },
-  codeBlock: {
+  code: {
+    backgroundColor: '#f7f7f7',
+    padding: 5,
+  },
+  blockquote: {
     fontFamily: 'Courier',
     fontWeight: '500',
+    color: 'grey',
+  },
+  blockQuotePipe: {
+    height: 25,
+    width: 3,
+    marginHorizontal: 10,
+    backgroundColor: '#dddddd',
   },
   del: {
     containerBackgroundColor: '#222222',
@@ -74,41 +85,30 @@ let mdStyle = {
   em: {
     fontStyle: 'italic',
   },
-  image: {
-    height: 50,
-    width: 50,
-  },
-  inlineCode: {
-    backgroundColor: '#eeeeee',
-    borderColor: '#dddddd',
-    borderRadius: 3,
-    borderWidth: 1,
-    fontFamily: 'Courier',
+  strong: {
     fontWeight: 'bold',
   },
-  list: {
+  li: {
 
   },
-  listItem: {
-    flexDirection: 'row',
+  liPoint: {
+    height: 5,
+    width: 5,
+    borderRadius: 50,
+    margin: 5,
+    backgroundColor: 'black',
   },
-  listItemBullet: {
-    fontSize: 20,
-    lineHeight: 20,
-  },
-  listItemNumber: {
+  liOrder: {
     fontWeight: 'bold',
+    paddingLeft: 5,
   },
-  paragraph: {
+  p: {
     marginTop: 10,
     marginBottom: 10,
     flexWrap: 'wrap',
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-  },
-  strong: {
-    fontWeight: 'bold',
   },
 };
 export { mdStyle };
