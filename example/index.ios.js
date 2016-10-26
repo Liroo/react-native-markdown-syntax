@@ -19,17 +19,11 @@ Emphasis, aka italics, with *asterisks* or _underscores_.{'\n'}
 Strong emphasis, aka bold, with **asterisks** or __underscores__.{'\n'}
 Combined emphasis with **asterisks and _underscores_**.{'\n'}
 Strikethrough uses two tildes. `Scratch this.`{'\n'}
+{'     '}Hello World{'\n'}
+{'\n'}
 > Hello
  __yoloeza__
- `e az`
- e aze
- az
-  e
-  az
-  e
-  az
-  e
-  az
+ `e az`  az
   e
   az{'\n'}{'\n'}
 - ul{'\n\n​\n\n'}1. ol1{'\n'}2. ol2{'\n'}3. ol3{'\n\n\nHellloooo\n\n'}- ulnew{'\n'}- [ ] checkbox{'\n'}

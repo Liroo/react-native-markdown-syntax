@@ -66,7 +66,11 @@ let mdStyle = {
   },
   code: {
     backgroundColor: '#f7f7f7',
-    padding: 5,
+  },
+  boxPre: {
+    backgroundColor: '#f7f7f7',
+  },
+  pre: {
   },
   blockquote: {
     fontFamily: 'Courier',
