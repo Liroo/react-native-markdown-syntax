@@ -72,6 +72,9 @@ let mdStyle = {
   },
   pre: {
   },
+  a: {
+    color: 'blue',
+  },
   blockquote: {
     fontFamily: 'Courier',
     fontWeight: '500',
